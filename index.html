@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My Happiness - A beautiful love story captured in moments">
+    <title>💕 My Happiness 💕</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Particle Canvas Background -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Floating Hearts -->
+    <div id="floatingHearts"></div>
+
+    <!-- Loading / Intro Screen -->
+    <div class="intro-screen" id="introScreen">
+        <div class="intro-content">
+            <div class="intro-heart">
+                <svg viewBox="0 0 100 100" class="heart-svg">
+                    <path d="M50 88 C25 65, 0 50, 0 30 C0 12, 12 0, 25 0 C35 0, 45 8, 50 15 C55 8, 65 0, 75 0 C88 0, 100 12, 100 30 C100 50, 75 65, 50 88Z" fill="url(#heartGrad)"/>
+                    <defs>
+                        <linearGradient id="heartGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#ff6b9d"/>
+                            <stop offset="50%" style="stop-color:#e84393"/>
+                            <stop offset="100%" style="stop-color:#fd79a8"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <h2 class="intro-title">My Happiness</h2>
+            <p class="intro-subtitle">Klik untuk membuka cerita kita...</p>
+            <div class="intro-sparkles"></div>
+        </div>
+    </div>
+
+    <!-- Main Website -->
+    <div class="website-container" id="websiteContainer">
+
+        <!-- Navigation -->
+        <nav class="navbar" id="navbar">
+            <div class="nav-logo">
+                <span class="nav-heart">💕</span>
+                <span class="nav-text">My Happiness</span>
+            </div>
+            <div class="nav-links">
+                <a href="#hero" class="nav-link active" data-section="hero">Home</a>
+                <a href="#about" class="nav-link" data-section="about">Our Story</a>
+                <a href="#gallery" class="nav-link" data-section="gallery">Gallery</a>
+                <a href="#quotes" class="nav-link" data-section="quotes">Love Notes</a>
+            </div>
+            <button class="nav-menu-btn" id="navMenuBtn">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+
+        <!-- Mobile Nav -->
+        <div class="mobile-nav" id="mobileNav">
+            <a href="#hero" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">Our Story</a>
+            <a href="#gallery" class="mobile-link">Gallery</a>
+            <a href="#quotes" class="mobile-link">Love Notes</a>
+        </div>
+
+        <!-- ====== HERO SECTION ====== -->
+        <section class="hero-section" id="hero">
+            <div class="hero-bg-overlay"></div>
+            <div class="hero-orb hero-orb-1"></div>
+            <div class="hero-orb hero-orb-2"></div>
+            <div class="hero-orb hero-orb-3"></div>
+
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span>✨</span> Our Love Story <span>✨</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line line-1">You Are My</span>
+                    <span class="title-line line-2">Happiness</span>
+                </h1>
+                <p class="hero-quote">
+                    "Kamu adalah alasan di balik setiap senyumanku,<br>
+                    dan kebahagiaanku yang paling indah."
+                </p>
+                <div class="hero-photo-frame">
+                    <div class="frame-glow"></div>
+                    <img src="images/photo1.png" alt="Our beautiful moment together" id="heroPhoto">
+                    <div class="frame-border"></div>
+                </div>
+                <div class="scroll-indicator">
+                    <span>Scroll Down</span>
+                    <div class="scroll-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 4v16m0 0l-6-6m6 6l6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== ABOUT / OUR STORY SECTION ====== -->
+        <section class="about-section" id="about">
+            <div class="section-bg-pattern"></div>
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-badge">💖 Our Story</span>
+                    <h2 class="section-title">Cerita Tentang Kita</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="story-grid">
+                    <div class="story-image reveal-left">
+                        <div class="image-wrapper">
+                            <img src="images/photo4.jpg" alt="Our special moment">
+                            <div class="image-overlay">
+                                <span>💕</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="story-content reveal-right">
+                        <div class="story-card">
+                            <div class="story-icon">🌟</div>
+                            <h3>Kebahagiaan Terindah</h3>
+                            <p>
+                                Setiap momen bersamamu adalah kebahagiaan yang tak ternilai. 
+                                Tawa kita, cerita kita, dan semua kenangan indah yang kita buat bersama 
+                                adalah harta yang paling berharga dalam hidupku.
+                            </p>
+                        </div>
+                        <div class="story-card">
+                            <div class="story-icon">💫</div>
+                            <h3>Bersama Selamanya</h3>
+                            <p>
+                                Di setiap langkahku, aku ingin kamu selalu ada di sisiku. 
+                                Karena bersamamu, dunia terasa lebih indah dan bermakna. 
+                                Kamu adalah rumah bagiku — tempat ternyaman untuk pulang.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== PHOTO GALLERY SECTION ====== -->
+        <section class="gallery-section" id="gallery">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-badge">📸 Gallery</span>
+                    <h2 class="section-title">Momen Kebersamaan</h2>
+                    <div class="title-underline"></div>
+                    <p class="section-subtitle">Setiap foto menyimpan sejuta kenangan indah</p>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item gallery-large reveal-scale" data-caption="Bersama dirimu, setiap tempat terasa seperti surga 💕">
+                        <div class="gallery-img-wrapper">
+                            <img src="images/photo1.png" alt="Beautiful mirror selfie together" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-overlay-content">
+                                    <span class="gallery-heart">💖</span>
+                                    <p>Bersama dirimu, setiap tempat terasa seperti surga</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item reveal-scale" data-caption="Cincin ini adalah janji cinta kita 💍">
+                        <div class="gallery-img-wrapper">
+                            <img src="images/photo2.jpg" alt="Showing our rings" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-overlay-content">
+                                    <span class="gallery-heart">💍</span>
+                                    <p>Cincin ini adalah janji cinta kita</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item reveal-scale" data-caption="Kebersamaan yang penuh tawa 😄">
+                        <div class="gallery-img-wrapper">
+                            <img src="images/photo3.jpg" alt="Fun moments in the car" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-overlay-content">
+                                    <span class="gallery-heart">😄</span>
+                                    <p>Kebersamaan yang penuh tawa dan kebahagiaan</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item reveal-scale" data-caption="Di rumah Tuhan, cinta kita diberkati 🙏">
+                        <div class="gallery-img-wrapper">
+                            <img src="images/photo4.jpg" alt="Together at church" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-overlay-content">
+                                    <span class="gallery-heart">🙏</span>
+                                    <p>Di rumah Tuhan, cinta kita diberkati</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item gallery-large reveal-scale" data-caption="Pelukan terhangatmu adalah rumahku 🤗">
+                        <div class="gallery-img-wrapper">
+                            <img src="images/photo5.png" alt="Sweet couple moment" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-overlay-content">
+                                    <span class="gallery-heart">🤗</span>
+                                    <p>Pelukan terhangatmu adalah rumahku</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== LOVE QUOTES / NOTES SECTION ====== -->
+        <section class="quotes-section" id="quotes">
+            <div class="quotes-bg-effect"></div>
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-badge">💌 Love Notes</span>
+                    <h2 class="section-title">Kata-Kata dari Hati</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="quotes-carousel" id="quotesCarousel">
+                    <div class="quote-card active" data-index="0">
+                        <div class="quote-decoration quote-deco-left">❝</div>
+                        <p class="quote-text">
+                            Aku tidak tahu apa yang telah kulakukan hingga pantas mendapatkanmu. 
+                            Yang ku tahu, bersamamu adalah anugerah terindah yang pernah ada.
+                        </p>
+                        <div class="quote-decoration quote-deco-right">❞</div>
+                        <div class="quote-author">— Untuk Kebahagiaanku 💕</div>
+                    </div>
+
+                    <div class="quote-card" data-index="1">
+                        <div class="quote-decoration quote-deco-left">❝</div>
+                        <p class="quote-text">
+                            Jika aku bisa memilih satu hal untuk disyukuri setiap hari, 
+                            aku akan selalu memilihmu. Karena kamu adalah jawaban dari semua doaku.
+                        </p>
+                        <div class="quote-decoration quote-deco-right">❞</div>
+                        <div class="quote-author">— Selamanya Milikmu 🌹</div>
+                    </div>
+
+                    <div class="quote-card" data-index="2">
+                        <div class="quote-decoration quote-deco-left">❝</div>
+                        <p class="quote-text">
+                            Di antara jutaan bintang di langit, kamu adalah bintang yang paling terang 
+                            dalam hidupku. Sinarmu menerangi setiap langkahku.
+                        </p>
+                        <div class="quote-decoration quote-deco-right">❞</div>
+                        <div class="quote-author">— Cintaku Untukmu ⭐</div>
+                    </div>
+
+                    <div class="quote-card" data-index="3">
+                        <div class="quote-decoration quote-deco-left">❝</div>
+                        <p class="quote-text">
+                            Rumah bukanlah tempat, rumah adalah perasaan. 
+                            Dan perasaan itu kutemukan setiap kali aku menatap matamu 
+                            dan merasakan hangatnya pelukanmu.
+                        </p>
+                        <div class="quote-decoration quote-deco-right">❞</div>
+                        <div class="quote-author">— Hatiku Milikmu 🏡💖</div>
+                    </div>
+
+                    <div class="quote-card" data-index="4">
+                        <div class="quote-decoration quote-deco-left">❝</div>
+                        <p class="quote-text">
+                            Bersyukur kepada Tuhan karena telah mengirimkanmu ke dalam hidupku. 
+                            Kamu bukan hanya kebahagiaanku, tapi juga bukti kasih sayang-Nya yang nyata.
+                        </p>
+                        <div class="quote-decoration quote-deco-right">❞</div>
+                        <div class="quote-author">— Dengan Segala Cintaku 🙏✨</div>
+                    </div>
+                </div>
+
+                <div class="quotes-nav">
+                    <button class="quote-nav-btn quote-prev" id="quotePrev" aria-label="Previous quote">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="quote-dots" id="quoteDots"></div>
+                    <button class="quote-nav-btn quote-next" id="quoteNext" aria-label="Next quote">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== FOOTER ====== -->
+        <footer class="footer">
+            <div class="footer-hearts">
+                <span>💕</span><span>💖</span><span>💕</span>
+            </div>
+            <p class="footer-text">Made with all my love 💖</p>
+            <p class="footer-sub">Forever & Always — My Happiness</p>
+            <div class="footer-wave">
+                <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+                    <path d="M0,50 C360,100 720,0 1080,50 C1260,75 1380,25 1440,50 L1440,100 L0,100 Z" fill="rgba(232,67,147,0.1)"/>
+                </svg>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">&times;</button>
+        <div class="lightbox-content">
+            <img src="" alt="Full view" id="lightboxImg">
+            <p class="lightbox-caption" id="lightboxCaption"></p>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M12 19V5m0 0l-7 7m7-7l7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
